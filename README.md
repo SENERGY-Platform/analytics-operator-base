@@ -5,7 +5,7 @@ Base image for analytics operators written in Java.
 Use this image as follows:
 ```
 # Build your operator, for example using maven
-FROM maven:3.6-openjdk-11-slim as builder
+FROM maven:3.8-eclipse-temurin-17 as builder
 ADD src /usr/src/app/src
 ADD pom.xml /usr/src/app
 WORKDIR /usr/src/app
